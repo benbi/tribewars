@@ -1,0 +1,1280 @@
+@charset "utf-8";
+
+/* New Yii shit */
+
+.operations{
+	margin:0;
+	padding:0;	
+}
+/* General */
+@font-face {
+    font-family: 'BambinoRegular';
+    src: url('./fonts/bambino-webfont.eot');
+    src: url('./fonts/bambino-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/bambino-webfont.woff') format('woff'),
+         url('./fonts/bambino-webfont.ttf') format('truetype'),
+         url('./fonts/bambino-webfont.svg#BambinoRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}	
+
+body{
+	background: url(./images/main_bg.jpg) no-repeat center top;
+	padding:0;
+	margin:0;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#333;
+}
+
+h1{
+	font-weight:normal;
+	word-spacing:10px;
+	font-size:18px;
+	overflow:visible;
+	height:40px;
+}
+
+a, a:hover{
+	text-decoration:none;
+	color:#a06a20;
+}
+
+strong, b{
+	color:#240A06;
+	
+}
+
+.clear{
+	clear:both;	
+}
+
+input[type=text], input[type=password]{
+	border: 1px solid #CCC;
+	background-color: white;
+	padding: 5px;
+	color:#a06a20;
+}
+
+.line_divider{
+	margin:5px 0 5px 0;
+	width:100%;
+	height:1px;
+	background: url(./images/line_light.jpg) repeat-x bottom left;
+}
+/* colours */
+
+.grey{
+	color:#666;
+}
+
+.js{
+	color:#331915;
+}
+
+.red{
+	color:#970404;
+}
+
+.dark_red{
+	color:#240A06;
+}
+
+.yellow{
+	color:#a06a27;
+}
+
+/* Header */
+
+#header{
+	width:952px;
+	height:400px;
+	margin:0 auto;
+	padding:0 0 0 0px;
+	
+}
+
+ul#menu{
+	font-family:Arial, Helvetica, sans-serif;
+	list-style:none;
+	padding:0;
+	margin:0;
+}
+
+ul#menu h1{
+	text-transform:none;
+}
+
+ul#menu li{
+	float:left;
+	width:148px;
+	height:322px;
+	position:relative;
+	text-align:center;
+}
+ul#menu li h1.menuTitle{
+	font-family:BambinoRegular, Arial, Helvetica, sans-serif;
+	font-size:30px;
+	font-weight:normal;
+	margin-top:80px;
+}
+
+ul#menu li ul{
+	position:absolute;
+	left:-9990px;
+	list-style:none;
+	padding:0;
+	margin:0;
+}
+
+ul#menu li:hover ul{
+	left:0px;
+}
+
+ul#menu li ul li{
+	border-top:1px solid transparent;
+	height:25px;
+}
+
+ul#menu li ul li a {
+	height:15px;
+	padding:5px 0 5px 0;
+	margin-top:3px;
+	display:block;
+	text-align:center;
+	color:#333;
+	font-weight:bold;
+	transition:background 0.2s, color 0.2s;
+	-moz-transition:background 0.2s, color 0.2s; /* Firefox 4 */
+	-webkit-transition:background 0.2s, color 0.2s; /* Safari and Chrome */
+	-o-transition:background 0.2s, color 0.2s; /* Opera */
+}
+
+ul#menu li ul li, ul#menu li ul li a {
+	width:148px;
+}
+
+ul#menu li ul a:hover{
+	background:#331c18;
+	color:#FFF;
+}
+
+ul#menu li#menus1, ul#menu li#menus3{
+	margin-right:2px;
+}
+
+ul#menu li#menu1:hover ul{
+	display:block;	
+}
+
+ul#menu li#menus2{
+	margin-right:350px;
+}
+
+ul#menu li#menus1:hover, ul#menu li#menus2:hover, ul#menu li#menus3:hover, ul#menu li#menus4:hover{
+	background-position: 0 -322px;
+}
+
+ul#menu li#menus1{
+	background:url(./images/menus1.jpg) top left no-repeat;
+}
+
+ul#menu li#menus2{
+	background:url(./images/menus2.jpg) top left no-repeat;
+}
+
+ul#menu li#menus3{
+	background:url(./images/menus3.jpg) top left no-repeat;
+}
+
+ul#menu li#menus4{
+	background:url(./images/menus4.jpg) top left no-repeat;
+}
+
+
+
+
+
+/* Main body */
+
+#footerImg{
+	background:url(./images/footer.jpg) center bottom no-repeat; overflow:hidden;
+	padding:0;
+	margin:0;	
+}
+
+#wrapper{
+	background:url(./images/wrapper_bg.jpg) center top no-repeat;
+	margin:11px auto;
+}
+
+#wrapper_content{
+	width:1000px;
+	padding: 0 0 10px 0;
+	min-height:100%;
+	margin:0 auto;
+}
+
+
+#container_left{
+	width:660px;
+	float:left;
+}
+
+#container_right{
+	background:url(./images/rightp_top.png) no-repeat top center ;
+	float:left;
+	height:700px;
+	width:340px;
+	position:relative;
+	top:-50px;
+}
+#container_whole{
+	width:1000px;
+	position:relative;
+	padding: 50px 0px 100px 0px;
+	min-height: 570px;
+}
+
+#help{
+	font-size:14px;
+	background:url(./images/help.png) no-repeat top left;
+	padding: 35px 0px 0px 65px;
+	color:#240a06;
+	width:530px;
+	height:35px;
+	margin:0 0 20px 30px;
+}
+
+#help strong{
+	text-transform:uppercase;
+}
+
+
+/* Right container */
+
+
+
+#container_rt{
+	width:340px;
+	height: 187px;
+}
+
+
+#userm{
+	width:290px;
+	height:120px;
+	margin:20px 0 0 20px;
+}
+
+#userm_img{
+	background:url(./images/userm_img_bg.png) no-repeat top center ;
+	width:130px;
+	height:120px;
+	float:left;
+}
+
+#userm_img img{
+	border:0;
+	margin: 9px 0px 0px 15px !important;
+}
+
+#userm_info{
+	width:150px;
+	height:120px;
+	float:left;
+	padding:0 0 0 10px;
+}
+
+#userm_info h3{
+	color:#240a06;
+	text-decoration:underline;
+	margin-bottom: 5px;
+}
+
+#userm_info table{
+	padding:0;
+	margin:0;
+}
+
+#userm_info table tr td{
+	color:#333;
+	font-weight:bold;
+	font-size:11px;
+	
+}
+
+#userm_info table tr td img{
+	width:22px;
+	height:22px;
+	margin:0 10px 5px 0;
+}
+#controls{
+	width:310px;
+	height:60px;
+	padding: 0 0 0 5px;
+}
+
+#controls img{
+	float:left;
+	border:none;
+	margin-left:10px;
+	
+}
+
+#container_rb{
+	background:url(./images/rightp_loop.jpg) repeat-y top center ;
+	width:306pxpx;
+	height:500px;
+	position:relative;
+	bottom:0;
+	left:0;
+	padding:0 0 0 30px;
+}
+
+#container_rb h1{
+	font-size: 14px;
+	color:#eaeaea;
+	text-shadow: #333 0.1em 0.1em;
+	height:50px;
+}
+
+.widget_header{
+	width:292px;
+	height:65px;
+	background:url(images/wood_piece.png) no-repeat top left;
+	margin: 10px 0 0 -25px;
+	padding: 20px 0 0 45px;
+}
+
+#c_rb_footer{
+	background:url(./images/rightp_bottom.png) repeat-y top center ;
+	width:340px;
+	height:93px;
+	position:absolute;
+	bottom:-10px;
+	left:0;
+	z-index:10;
+
+}
+
+#levelbar{
+	background:url(./images/level_bg.png) no-repeat top center ;
+	text-align:center;
+	width:268px;
+	height:28px;
+	color:#ffeecf;
+	font-weight:bold;
+	text-shadow:0px 0px 2px #000;
+	font-size:13px;
+	padding:9px 0;
+}
+
+.wm_wrapper{
+	background:url(./images/wm_header.png) no-repeat top center ;
+	width:653px;
+	padding:64px 0;
+}
+
+.wm_body{
+	background:url(./images/wm_loop.png) repeat-y top center ;
+	width: 543px;
+	padding: 10px 50px 5px 60px;
+	position:relative;
+}
+
+.wm_body h1{
+	margin:0px 0px 10px 10px;
+}
+
+
+
+/* Footer */
+.wm_footer{
+	background:url(./images/wm_footer.png) no-repeat top center ;
+	width:653px;
+	padding:0;
+	height:57px;
+}
+
+#footer{
+	width:230px;
+	height:55px;
+	color:#240A06;
+	margin:150px auto 50px auto;
+}
+
+#footer img{
+	margin: 0 10px 0 0;
+}
+
+#footer p{
+	padding:5px;
+}
+
+
+#main_mov{
+	width:660px;
+	position:relative;
+	margin-bottom: 120px;
+}
+
+#container_whole #main_mov{	
+	margin:0 auto;
+}
+
+
+/* Homepage */
+
+#container_whole .login_btn{
+	margin:120px 0px 0px 270px;
+	position:relative;
+	border:0;
+}
+#welcometitle{
+	color:#260A06;
+	padding:5px 0px 5px 0px
+}
+
+#home_info{
+}
+
+.row{
+	margin:0 0 10px 0;
+}
+#login-form h3, #registration-form h3{
+	color:#240a06;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	display:block;
+	margin:0 0 5px 0;
+}
+#registration-form input[type=text], #registration-form input[type=password]{
+	width:265px;
+}
+
+#login-form input[type=text], #login-form input[type=password]{
+	width:290px;
+}
+
+#login-form input[type=text], #login-form input[type=password], #registration-form input[type=text], #registration-form input[type=password]{
+	border: 1px solid #CCC;
+	background-color: white;
+	padding: 5px;
+	color:#a06a20;
+}
+
+
+input[type=submit]#register, input[type=submit]:hover#register, input[type=submit]:active#register{
+	background:url(images/register.png) no-repeat;
+	margin: 0 40px 0 0;
+	float:right;
+	width:154px;
+	height:59px;
+	font-size:0px;
+	border:0;
+	cursor:pointer;
+}
+input[type=submit]#login, input[type=submit]:hover#login, input[type=submit]:active#login{
+	background:url(images/login.png) no-repeat;
+	margin: 0 40px 0 0;
+	float:right;
+	width:114px;
+	height:59px;
+	font-size:0px;
+	border:0;
+	cursor:pointer;
+}
+
+/* Character selection */
+
+#cs_list li{
+	margin:30px 20px 0 0;
+}
+
+#cs_list a{
+	display:block;
+	border:2px solid #ccc;
+}
+#cs_list a.active, #cs_list a:hover{
+	border:2px solid #8d4f1a;
+}
+
+
+#csl_info, #csr_info{
+	width:150px;
+	height:200px;
+	float:left;
+}
+
+#csl_info table tr td img{
+	margin:5px 5px 5px 10px;
+}
+
+#csl_info h3{
+	text-indent:15px;
+}
+
+#csr_info h4{
+	font-weight:bold;
+	text-indent:10px;
+	margin:0 0 10px 0;
+}
+
+#csr_info p{
+	margin:20px 0 5px 0;
+	
+}
+
+#csr_info span{
+	color:#a06a20;
+	font-weight:bold;	
+}
+
+
+
+/* Character creation */
+
+#container_whole .ccreate_btn, #container_whole .start_btn{
+	margin:120px 0px 0px 0px;
+	float:right;
+	position:relative;
+	border:0;
+}
+
+#container_whole .start_btn{
+	margin-left:40px;
+}
+
+#container_whole .back_btn, #container_whole .logout_btn{
+	margin:120px 0px 0px 0px;
+	float:left;
+	position:relative;
+	border:0;
+}
+
+.row ul{
+	margin:0;
+	padding:0;
+	list-style: none;
+	width:300px;
+	float:left;
+}
+
+.row ul li{
+	float:left;
+	margin:0px 5px 5px 0px;
+	width:55px;
+}
+
+.row ul li img{
+	border:2px solid #ccc;
+	padding:0 !important;
+	margin:0 !important;
+}
+
+.row ul li img:hover{
+	border:2px solid #8d4f1a;
+	cursor:pointer;
+}
+
+#cs_info{
+	margin:20px 0 0 0;
+}
+
+
+/* Welcome page*/
+
+ul#bl_panel{ 
+	list-style-image:url(./images/qbullet.png);
+	color:#260a06;
+}
+ul#latest_news{
+	list-style:none;
+	color:#260a06;
+	margin:0;
+	padding:0;
+}
+ul#latest_news li{ 
+	background: url(./images/line.jpg) repeat-x bottom left;
+	padding:0 0 10px 0;
+	margin: 0 0 25px 0;
+	float:left;
+}
+
+ul#latest_news li .linupanel{
+	width:65px;
+	margin:0 25px 0 0;
+	text-align:right;
+}
+
+ul#latest_news li .rinupanel{
+	width:430px;
+	text-align:left;
+}
+
+ul#bl_panel li{
+	margin:10px 0px 10px 0px;
+}
+
+#bl_char{
+	position:absolute;
+	bottom: -40px;
+	right: 50px;
+}
+
+
+/* Quest and army main details */
+#mov_img{
+	width:660px;
+	background:url(./images/questimg_bg.png) no-repeat top center;
+	height:358px;
+	z-index:1;
+	position:relative;
+}
+
+.small{
+	height:200px !important;
+	background:url(./images/smallimg_bg.png) no-repeat top center !important;
+}
+
+
+#mov_img img{
+	margin: 10px 0 0 32px;	
+}
+
+.mov_info{
+	background:url(./images/questinfo.png) no-repeat top left;
+	width: 520px;
+	height: 155px;
+	position: absolute;
+	top: 315px;
+	left: 35px;
+	z-index: 999;
+	padding: 0px 30px 0 35px;
+}
+
+.mov_info_small{
+	top: 160px !important;	
+}
+
+.mov_info ul{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+
+.mov_info li{
+	float:left;
+	margin:10px 15px 0 15px;
+}
+
+.mov_info li p{
+	margin:0;
+	padding:0 3px 0 0;
+}
+
+
+.mov_info li img,.mov_info li p, .mov_info li h3{
+	position:inherit;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.mov_info li h3{
+	height:50px;
+}
+
+.mov_info h3{
+	margin-bottom:5px;
+}
+
+.mov_info p{
+	margin-top:2px;
+}
+
+.mov_info img{
+	border:0;
+	position:absolute;
+	bottom: 30px;
+	right: 5px;
+}
+
+.gbox{
+	position: relative;
+	border:1px solid #ccc;
+	padding:5px;
+	margin:20px 0 10px 0;
+	/* Gradient */
+	background: url(./images/line.jpg) repeat linear-gradient(bottom, rgb(226,220,206) 33%, rgb(245,242,234) 67%);
+	background: -o-linear-gradient(bottom, rgb(226,220,206) 33%, rgb(245,242,234) 67%);
+	background: -moz-linear-gradient(bottom, rgb(226,220,206) 33%, rgb(245,242,234) 67%);
+	background: -webkit-linear-gradient(bottom, rgb(226,220,206) 33%, rgb(245,242,234) 67%);
+	background: -ms-linear-gradient(bottom, rgb(226,220,206) 33%, rgb(245,242,234) 67%);
+	
+	background-image:url(./images/line.jpg) repeat -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0.33, rgb(226,220,206)),
+		color-stop(0.67, rgb(245,242,234))
+);
+}
+
+
+
+
+/* Quest */
+
+.npcimg{
+	position:absolute;
+	bottom:30px;
+	left:30px;
+}
+
+
+
+.bquest table{
+	width:495px;
+	margin: 20px 0 0 25px;	
+}
+
+.bquest table thead tr td{
+	color:#240A06;
+	font-weight:bold;
+	padding:0 0 10px 0;
+	background:url(./images/line.jpg) repeat-x bottom center;
+}
+
+.bquest table tbody tr td{
+	padding:10px 0 0 0;
+	background:url(./images/line.jpg) repeat-x bottom center;
+}
+
+.bquest table tbody tr td ul{
+	padding:0;
+	margin: 0 0 0 20px;
+	list-style-image:url(./images/qbullet.png);
+	color:#260a06;
+	font-weight:bold;
+}
+
+.bquest table tbody tr td ul li a{
+	text-decoration:underline;
+	color:#260A06;
+}
+
+.qicon{
+	float:left;
+	margin:10px;
+	position: absolute;
+	top: 10px;
+}
+
+.bquest table tbody tr td .gbox{
+	width:280px;	
+}
+.bquest table tbody tr td .gbox ul{
+	padding:0;
+	margin:0px 0 0 0 ;
+	list-style:none;
+	float:right;
+	width:220px;
+}
+
+.bquest table tbody tr td .gbox ul li{
+	width:220px;
+	margin:5px 0 5px 0;
+	color:#333;
+	font-weight:normal;
+	float:left;
+}
+
+.bquest table tbody tr td table.bqreward{
+	width: 130px;
+	margin:0;
+	padding:0;	
+}
+
+.bquest table tbody tr td table.bqreward tr td{
+	padding:0 0 10px 0;
+	margin:0;
+	background:none;
+	font-weight:bold;
+	color:#000;
+	
+}
+
+/* Shop */
+
+.bquest table tbody tr td table.shop_table{
+	width:315px;
+	margin:0;
+	padding:0;	
+}
+
+.bquest table tbody tr td table.shop_table tr td{
+	line-height: 20px;
+	padding:0 0 10px 0;
+	margin:0;
+	background:none;
+	font-weight:normal;
+	color:#333;
+}
+
+.bquest table tbody tr td table.shop_table tr td a{
+	font-weight:bold;
+	text-decoration:underline;
+	color:#260A06;
+}
+
+.weapon_icon{
+	width:35px;
+}
+
+.want_buy{
+	display:none;
+	padding:0 10px 10px 10px;	
+}
+.want_buy h4{
+	font-weight:normal;
+}
+
+.want_buy .js{
+	font-weight:bolder;
+}
+/* Army */
+
+#mov_details{
+	background:url(./images/army/info_s.png) no-repeat top left;
+	width:325px;
+	height:353px;
+	position:absolute;
+	right:0;
+	top:-20px;
+	padding:40px 0 0 55px;
+}
+
+#mov_details h3{
+	color:#260a06;
+}
+
+#mov_details .gbox{
+	width:260px;	
+}
+
+#mov_details .gbox p{
+	margin:5px 5px 10px 5px;
+}
+
+#mov_details .gbox img{
+	margin:0;
+	padding:0;
+}
+
+#mov_details .gbox .acost{
+	float:left;
+	margin:0 0 5px 10px;
+}
+
+#mov_details .gbox .acost strong{
+	margin:0 10px 0 5px;	
+}
+
+#ainfo{
+	margin: 30px 0 0 35px !important;
+}
+
+#ainfo_ico{
+	left: 25px !important;
+	top: 15px !important;
+}
+
+
+#produce{
+	padding:15px 0 0 0;
+}
+
+#produce p{
+	margin:10px 35px 0 0;
+	padding:0;
+	float:left;
+}
+
+#produce strong{
+	color:#333;
+	margin:0 5px 0 10px;
+}
+
+#produce input[type=text]{
+	background:url(./images/army/amount.jpg) no-repeat top left;
+	border:0;
+	width: 43px;
+	height: 29px;
+	padding:0 0 0 5px;
+}
+
+#produce input[type=submit]{
+	background:url(./images/army/produce.png) no-repeat top left;
+	width:130px;
+	height:58px;
+	border:0;
+	cursor:pointer;
+	float:left;
+}
+
+.barmy h1{
+	background:url(./images/line.jpg) bottom left repeat-x;
+	padding:0 0 12px 0;
+	margin-bottom:15px;
+	width:530px;
+	height:40px;
+}
+
+ul.acont{
+	margin:0;	
+	list-style:none;
+	padding:0;
+}
+
+ul.acont li{
+	float:left;
+	margin:0 15px 30px 0; 
+	position:relative;
+	width: 120px;
+	height: 105px;
+}
+
+.sborder, .simg, .cnumber{
+	position:absolute;
+	border:0;
+}
+
+.sborder{
+	z-index:10;	
+}
+
+.simg{	
+	z-index:1;
+	left:5px;
+	top:5px;
+}
+
+.cnumber{
+	z-index:11;
+	diplay:block;
+	bottom: 11px;
+	right: 17px;
+	color:#fff;
+	text-align:center;
+}
+
+
+/* User panel */
+
+ul#inupanel{
+	list-style-image:url(./images/qbullet.png);
+	color:#260a06;
+}
+
+ul#inupanel li{
+	float:left;
+	width:180px;
+	margin-right:40px;
+	padding:10px;
+	background:url(./images/line_light.jpg) repeat-x bottom center;
+}
+.linupanel{
+	float:left;
+	font-weight:bold;
+	width:75px;
+}
+
+.rinupanel{
+	float:left;
+	color:#333;
+	width:105px;
+}
+
+.rinupanel span{
+	color:#260a06;
+}
+
+
+
+
+/* Skills */
+
+.skills_wrapper{
+	height:1068px;
+	background:url(images/skills_bg.jpg) no-repeat top left;
+}
+
+.skills_wrapper .wm_body{
+	background:none !important;	
+}
+
+#skill_points{
+	position:absolute;
+	top: 15px;
+	right: 70px;
+}
+
+.skills_wrapper table{
+	margin:0;
+	width:100%;
+	padding-right:10px;
+	float:left;
+}
+
+.skills_wrapper table tr{
+	height:150px;
+}
+
+.skills_wrapper .skill{
+	width:80px;
+	height:78px;
+	margin:20px 40px 45px 0;
+	position:relative;	
+}
+
+.skill .sborder{
+	top:0;
+	left:0;
+}
+.skills_wrapper .skill .simg{
+	top:15px;
+	left:15px;
+}
+.skills_wrapper .skill .cnumber{
+	bottom: 5px;
+	right: 10px;
+}
+.skill_info_wrapper{
+	-moz-box-shadow: 0 0 13px 1px #333;
+	-webkit-box-shadow: 0 0 13px 1px #333;
+	box-shadow: 0 0 13px 1px #333;	
+	margin:0;
+	background:#fdfdfb;
+}
+.skill_info{
+	font-size:12px;
+	width:250px;
+	height:220px;
+	display:none;
+	font-weight:bolder;
+	padding:0px 15px 10px 15px;
+}
+
+.skill_info h4{
+	font-size:14px;
+}
+
+
+/* Player list */
+
+#search_player{
+	width:350px;
+	height:50px;
+	margin: 0 0 20px 40px;
+}
+
+#search_player span{
+	font-weight:bold;	
+	display:block;
+	height:20px;
+	padding:8px 0;
+}
+
+#search_player *{
+	float:left;
+}
+
+#search_player input[type=text]{
+	margin:0 10px 0 10px;
+}
+
+#search_player input[type=submit]{
+	width:54px;
+	height:35px;
+	background:url(images/go.jpg) no-repeat top left;
+	border:0;
+	cursor:pointer;
+}
+
+#player_list{
+	width:475px;
+	margin: 0 0 0 40px;
+}
+
+#player_list thead tr td{
+	font-weight:bold;
+	color:#240A06;
+}
+
+#player_list tr td{
+	padding:10px 0 10px 0;
+	font-weight: bold;
+}
+
+#player_list tr td a{
+	font-weight:bold;
+}
+#player_list tr{
+	background:url(images/line_light.jpg) repeat-x bottom left;
+}
+
+.p_info *{
+	float: left;
+}
+
+.p_img{
+	display:block;
+	width:50px;
+	height:50px;
+	padding:4px 0 0 3px;
+	background:url(images/small_user_bg.png) no-repeat top left;
+	
+}
+
+.p_name{
+	margin: 15px 0 0 10px;
+}
+
+
+/* Fighting results */
+
+#cr_user_img{
+	width:330px;
+	height:170px;
+	margin:0 auto;
+}
+
+.user_img{
+	background:url(./images/userm_img_bg.png) no-repeat top center ;
+	width:130px;
+	height:120px;
+	float:left;
+}
+
+.user_img img{
+	border:0;
+	margin: 9px 0px 0px 15px !important;
+}
+
+#cr_user_img small, #cr_user_img h3{
+	text-align: center;
+	display:block;
+	margin:10px 0 0px 0;
+}
+#cr_user_img small{
+	color:#7f6619;
+	font-weight:bold;
+}
+
+#cr_user_img h3 a{
+	text-decoration:underline;	
+	color: #240A06;
+}
+
+#cr_user_img h1{
+	float:left;
+	margin:30px 10px 0 15px;
+}
+
+#fight_result{
+	width:470px;
+	margin: 10px  auto;
+	text-align:center;
+	border:1px solid #ccc;
+}
+
+#fight_result tbody{
+	background-image: linear-gradient(bottom, rgb(241,237,227) 100%, rgb(226,220,206) 50%);
+	background-image: -o-linear-gradient(bottom, rgb(241,237,227) 100%, rgb(226,220,206) 50%);
+	background-image: -moz-linear-gradient(bottom, rgb(241,237,227) 100%, rgb(226,220,206) 50%);
+	background-image: -webkit-linear-gradient(bottom, rgb(241,237,227) 100%, rgb(226,220,206) 50%);
+	background-image: -ms-linear-gradient(bottom, rgb(241,237,227) 100%, rgb(226,220,206) 50%);
+	
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(1, rgb(241,237,227)),
+		color-stop(0.5, rgb(226,220,206))
+);	
+}
+
+#fight_result tbody tr td{
+	padding: 10px 0 10px 0;
+	width:50%;
+	font-size:15px;
+	font-weight:bold;
+}
+
+#reward_result{
+	font-weight: bold;
+	margin:20px 0 20px 35px;
+}
+
+#reward_result p{
+	margin:5px 0 5px 0;
+	padding:0;
+}
+
+#battle_info{
+	margin:0 auto;
+	width:470px;
+	padding:20px 0;
+}
+
+#battle_info h3 a{
+	margin:0 0 10px 5px;
+	color:#331915;
+}
+
+#battle_wrapper{
+	width:100% ;
+	float:left;
+}
+
+#battle_info_table{
+	background:#efefee;
+	width:100%;
+	border:1px solid #ccc;
+}
+
+#battle_info_table tr td{
+	padding:20px 0 20px 40px;
+}
+
+
+#battle_info_table tr td table.bit_in tr td{
+	padding:3px 0px 3px 7px;
+	font-weight:bold;
+}
+
+.bit_in_icon img{
+	background:#fff;
+	border:1px solid #ccc;
+	padding:5px !important;
+}
+
+.ui-accordion .ui-accordion-header .ui-icon, .ui-accordion-header a {
+	display:block;
+	float:left;
+}
+
+.ui-accordion .ui-accordion-header .ui-icon{
+	width:20px;
+	height:14px;
+	margin:2px 0 0 0;
+}
+.ui-icon-triangle-1-s{
+	background:url(images/expand.png) no-repeat top left;
+}
+
+.ui-icon-triangle-1-e{
+	background:url(images/expand.png) no-repeat top left;
+	background-position: 0px -14px;
+}
